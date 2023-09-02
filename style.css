@@ -1,0 +1,88 @@
+html{
+    font-size: 0.7vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #FDCB58, #FFA07A);
+    background-repeat: no-repeat;
+}
+
+.clockPage{
+    margin: 2rem 10% 0;
+    text-align: center;
+}
+
+.clockPage>h3{
+    margin: 2rem 0;
+    font-size: 2rem;;
+}
+
+.clockPage>h1{
+    font-family: 'Playfair Display', serif;
+    margin: 1rem 0;
+    font-size: 8rem;
+}
+
+.clock{
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    margin: 5rem auto;
+    position: relative;
+    background: url(clockFace.png);
+    background-size: cover;
+}
+
+.hand{
+    position: absolute;
+    transform-origin: bottom;
+    background-color: black;
+}
+
+#hourHand{
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 49%;
+}
+
+#minuteHand{
+    width: 1.6%;
+    height: 30%;
+    top: 20%;
+    left: 49.1%;
+
+}
+
+#secondHand{
+    width: 1.3%;
+    height: 40%;
+    top: 10%;
+    left: 49.3%;
+
+}
+
+.handHolder{
+    background-color: black;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+    border-radius: 50%;
+    top: 46.5%;
+    left: 46.5%;
+    opacity: 0.9;
+}
+
+/* 
+const x = new Date();
+setInterval() => 1 sec => function 
+setTimeout() -> 1sec
+
+*/
